@@ -1,0 +1,12 @@
+<svg width="389" height="184" viewBox="0 0 389 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="eye">
+    <circle class="eyeball" fill-rule="evenodd" clip-rule="evenodd" cx="131" cy="92" r="42" fill="white"/>
+    <ellipse class="pupil" fill="#000000" fill-rule="evenodd" clip-rule="evenodd" cx="131" cy="92" rx="14.829" ry="16.062"/>
+    <ellipse class="glare" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" cx="131" cy="92" rx="3.496" ry="4.082"/>
+</g>
+<g class="eye">
+    <circle class="eyeball" fill-rule="evenodd" clip-rule="evenodd" cx="258" cy="87" r="42" fill="white"/>
+    <ellipse class="pupil" fill="#000000" fill-rule="evenodd" clip-rule="evenodd" cx="258" cy="87" rx="14.582" ry="16.062"/>
+    <ellipse class="glare" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" cx="258" cy="87" rx="3.438" ry="4.082"/>
+</g>
+</svg>

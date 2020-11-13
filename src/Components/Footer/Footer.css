@@ -1,0 +1,13 @@
+#Footer > img {
+  min-width: 100%;
+}
+#Footer > div {
+  background: #0099ff;
+}
+#SubscribeButton {
+  border-radius: 15px;
+}
+#SubscribeButton > h5 {
+  color: #0099ff;
+  margin: auto;
+}

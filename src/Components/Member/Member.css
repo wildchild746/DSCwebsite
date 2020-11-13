@@ -1,0 +1,8 @@
+#MemberImage {
+  background: #06062d;
+  border: solid 5px #9a9a9a;
+  width: 100%;
+}
+#Member {
+  width: calc((350 / 1440) * 100vw);
+}

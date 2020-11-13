@@ -1,0 +1,301 @@
+.FloatY {
+  animation: FloatY infinite 3s ease-in-out;
+}
+@keyframes FloatY {
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.FloatX {
+  animation: FloatX infinite 3s ease-in-out;
+}
+@keyframes FloatX {
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(15px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.GrowShrink {
+  animation: GrowShrink infinite 3s ease-in-out;
+}
+@keyframes GrowShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Wave1 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 0ms;
+}
+.Wave2 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 150ms;
+}
+.Wave3 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 300ms;
+}
+.Wave4 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 450ms;
+}
+.Wave5 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 600ms;
+}
+.Wave6 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 750ms;
+}
+.Wave7 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 900ms;
+}
+.Wave8 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1050ms;
+}
+.Wave9 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1200ms;
+}
+.Wave10 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1350ms;
+}
+.Wave11 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1500ms;
+}
+.Wave12 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1650ms;
+}
+.Wave13 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1800ms;
+}
+.Wave14 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1950ms;
+}
+.Wave15 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 2100ms;
+}
+.Wave16 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 2250ms;
+}
+@keyframes Wave {
+  from {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -15px);
+  }
+  15% {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.Spiral {
+  animation: SpiralYShift 40s infinite linear;
+  width: calc((57 / 1920) * 100vw);
+  height: calc((146.5 / 1920) * 100vw);
+  background: url("../../Resources/Vectors/Spiral.svg") no-repeat;
+  background-size: calc((57 / 1920) * 100vw);
+}
+@keyframes SpiralYShift {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: calc((-439.5 / 1920) * 100vw);
+  }
+}
+#backgroundContainer {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--bg) * 250vh);
+  overflow: hidden;
+  background: #fafafa;
+}
+#backgroundContainer.dark {
+  background: #202020;
+}
+#background > * {
+  position: absolute;
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  #background > * {
+    visibility: visible;
+  }
+}
+#BackgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+#cube1,
+#cube2,
+#cube3,
+#cube4 {
+  width: calc((88 / 1920) * 100vw);
+}
+#cube1 {
+  top: calc(70vh + ((var(--bg) - 1) * 250vh));
+  left: calc(84vw);
+}
+#cube2 {
+  width: calc((88 / 1920) * 100vw);
+  top: calc(118vh + ((var(--bg) - 1) * 250vh));
+  left: calc(58vw);
+}
+#cube3 {
+  width: calc((88 / 1920) * 100vw);
+  top: calc(130vh + ((var(--bg) - 1) * 250vh));
+  left: calc(20vw);
+}
+#cube4 {
+  width: calc((88 / 1920) * 100vw);
+  top: calc(210vh + ((var(--bg) - 1) * 250vh));
+  left: calc(45vw);
+}
+#spiral1 {
+  top: calc(30vh + ((var(--bg) - 1) * 250vh));
+  left: 0;
+}
+#spiral2 {
+  top: calc(170vh + ((var(--bg) - 1) * 250vh));
+  right: calc(30vw);
+  rotate: -70deg;
+  scale: 1.2;
+}
+#triangleGroup1 > img,
+#triangleGroup2 > img,
+#triangleGroup3 > img,
+#triangleGroup4 > img,
+#triangleGroup5 > img {
+  width: calc((48 / 1920) * 100vw);
+}
+#triangleGroup1 {
+  top: calc(18vh + ((var(--bg) - 1) * 250vh));
+  left: calc(20vw);
+  rotate: 180deg;
+}
+#triangleGroup2 {
+  top: calc(28vh + ((var(--bg) - 1) * 250vh));
+  scale: 0.7;
+  right: calc(-4.5vw);
+  rotate: -90deg;
+}
+#triangleGroup3 {
+  scale: 0.6;
+  top: calc(80vh + ((var(--bg) - 1) * 250vh));
+  left: calc(30vw);
+  rotate: 135deg;
+}
+#triangleGroup4 {
+  top: calc(220vh + ((var(--bg) - 1) * 250vh));
+  left: calc(-4vw);
+  rotate: 90deg;
+}
+#triangleGroup5 {
+  top: calc(235vh + ((var(--bg) - 1) * 250vh));
+  right: calc(15vw);
+  rotate: -45deg;
+  scale: 0.9;
+}
+#hexagonsSolid1,
+#hexagonsSolid2,
+#hexagonsSolid3,
+#hexagonsSolid4 {
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid1 {
+  rotate: -90deg;
+  scale: 0.6;
+  top: calc(50vh + ((var(--bg) - 1) * 250vh));
+  left: calc(60vw);
+}
+#hexagonsSolid2 {
+  top: calc(150vh + ((var(--bg) - 1) * 250vh));
+  left: calc(55vw);
+  scale: 0.8;
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid3 {
+  top: calc(170vh + ((var(--bg) - 1) * 250vh));
+  right: calc(-1vw);
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid4 {
+  top: calc(258vh + ((var(--bg) - 1) * 250vh));
+  left: calc(20vw);
+}
+#circlesGroup1 > div {
+  height: calc((17 / 1920) * 100vw);
+}
+#circlesGroup1 > div > img {
+  width: calc((17 / 1920) * 100vw);
+}
+#circlesGroup1 {
+  top: calc(50vh + ((var(--bg) - 1) * 250vh));
+  right: calc(-0.5vw);
+}
+#pattern1 {
+  width: calc((552 / 1920) * 100vw);
+  top: calc(-25vh + ((var(--bg) - 1) * 250vh));
+  right: calc(-10vw);
+}
+#pattern2 {
+  width: calc((453 / 1920) * 100vw);
+  top: calc(57vh + ((var(--bg) - 1) * 250vh));
+  right: calc(-12.5vw);
+}
+#pattern3 {
+  width: calc((723 / 1920) * 100vw);
+  top: calc(150vh + ((var(--bg) - 1) * 250vh));
+  left: calc(-25vw);
+}
+#hexagons1,
+#hexagons2 {
+  width: calc((114 / 1920) * 100vw);
+}
+#hexagons1 {
+  top: calc(50vh + ((var(--bg) - 1) * 250vh));
+  left: calc(10vw);
+}
+#hexagons2 {
+  top: calc(40vh + ((var(--bg) - 1) * 250vh));
+  right: calc(15vw);
+  width: calc((106 / 1920) * 100vw);
+}

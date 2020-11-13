@@ -1,0 +1,477 @@
+.FloatY {
+  animation: FloatY infinite 3s ease-in-out;
+}
+@keyframes FloatY {
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.FloatX {
+  animation: FloatX infinite 3s ease-in-out;
+}
+@keyframes FloatX {
+  from {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(15px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.GrowShrink {
+  animation: GrowShrink infinite 3s ease-in-out;
+}
+@keyframes GrowShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Wave1 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 0ms;
+}
+.Wave2 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 150ms;
+}
+.Wave3 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 300ms;
+}
+.Wave4 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 450ms;
+}
+.Wave5 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 600ms;
+}
+.Wave6 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 750ms;
+}
+.Wave7 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 900ms;
+}
+.Wave8 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1050ms;
+}
+.Wave9 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1200ms;
+}
+.Wave10 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1350ms;
+}
+.Wave11 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1500ms;
+}
+.Wave12 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1650ms;
+}
+.Wave13 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1800ms;
+}
+.Wave14 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 1950ms;
+}
+.Wave15 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 2100ms;
+}
+.Wave16 {
+  animation: ease-out infinite Wave 5s;
+  animation-delay: 2250ms;
+}
+@keyframes Wave {
+  from {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -15px);
+  }
+  15% {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.Spiral {
+  animation: SpiralYShift 40s infinite linear;
+  width: calc((57 / 1920) * 100vw);
+  height: calc((146.5 / 1920) * 100vw);
+  background: url("./Resources/Vectors/Spiral.svg") no-repeat;
+  background-size: calc((57 / 1920) * 100vw);
+}
+
+@keyframes SpiralYShift {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: calc((-439.5 / 1920) * 100vw);
+  }
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 500vh; */
+  /* overflow-x: cl; */
+  /* overflow-y: visible; */
+}
+#background > * {
+  position: absolute;
+}
+#BackgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#cube1,
+#cube2,
+#cube3,
+#cube4,
+#cube5,
+#cube6,
+#cube7,
+#cube8 {
+  width: calc((88 / 1920) * 100vw);
+}
+#cube1 {
+  top: 70vh;
+  left: calc(84vw);
+}
+#cube2 {
+  width: calc((88 / 1920) * 100vw);
+  top: 118vh;
+  left: calc(58vw);
+}
+#cube3 {
+  width: calc((88 / 1920) * 100vw);
+  top: 130vh;
+  left: calc(20vw);
+}
+#cube4 {
+  width: calc((88 / 1920) * 100vw);
+  top: 210vh;
+  left: calc(45vw);
+}
+#cube5 {
+  top: 320vh;
+  left: calc(84vw);
+}
+#cube6 {
+  width: calc((88 / 1920) * 100vw);
+  top: 368vh;
+  left: calc(58vw);
+}
+#cube7 {
+  width: calc((88 / 1920) * 100vw);
+  top: 380vh;
+  left: calc(20vw);
+}
+#cube8 {
+  width: calc((88 / 1920) * 100vw);
+  top: 460vh;
+  left: calc(45vw);
+}
+#spiral1 {
+  top: 30vh;
+  left: 0;
+}
+#spiral2 {
+  top: 170vh;
+  right: calc(30vw);
+  rotate: -70deg;
+  scale: 1.2;
+}
+#spiral3 {
+  top: 280vh;
+  left: 0;
+}
+#spiral4 {
+  top: 420vh;
+  right: calc(30vw);
+  rotate: -70deg;
+  scale: 1.2;
+}
+#triangleGroup1 > img,
+#triangleGroup2 > img,
+#triangleGroup3 > img,
+#triangleGroup4 > img,
+#triangleGroup5 > img,
+#triangleGroup6 > img,
+#triangleGroup7 > img,
+#triangleGroup8 > img,
+#triangleGroup9 > img,
+#triangleGroup10 > img {
+  width: calc((48 / 1920) * 100vw);
+}
+#triangleGroup1 {
+  top: 18vh;
+  left: calc(20vw);
+  rotate: 180deg;
+}
+#triangleGroup2 {
+  top: 28vh;
+  scale: 0.7;
+  right: calc(-4.5vw);
+  rotate: -90deg;
+}
+#triangleGroup3 {
+  scale: 0.6;
+  top: 80vh;
+  left: calc(30vw);
+  rotate: 135deg;
+}
+#triangleGroup4 {
+  top: 220vh;
+  left: calc(-4vw);
+  rotate: 90deg;
+}
+#triangleGroup5 {
+  top: 235vh;
+  right: calc(15vw);
+  rotate: -45deg;
+  scale: 0.9;
+}
+#triangleGroup6 {
+  top: 268vh;
+  left: calc(20vw);
+  rotate: 180deg;
+}
+#triangleGroup7 {
+  top: 270vh;
+  scale: 0.7;
+  right: calc(-4.5vw);
+  rotate: -90deg;
+}
+#triangleGroup8 {
+  scale: 0.6;
+  top: 330vh;
+  left: calc(30vw);
+  rotate: 135deg;
+}
+#triangleGroup9 {
+  top: 470vh;
+  left: calc(-4vw);
+  rotate: 90deg;
+}
+#triangleGroup10 {
+  top: 485vh;
+  right: calc(15vw);
+  rotate: -45deg;
+  scale: 0.9;
+}
+#hexagonsSolid1,
+#hexagonsSolid2,
+#hexagonsSolid3,
+#hexagonsSolid4,
+#hexagonsSolid5,
+#hexagonsSolid6,
+#hexagonsSolid7,
+#hexagonsSolid8 {
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid1 {
+  rotate: -90deg;
+  scale: 0.6;
+  top: 50vh;
+  left: calc(60vw);
+}
+#hexagonsSolid2 {
+  top: 150vh;
+  left: calc(55vw);
+  scale: 0.8;
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid3 {
+  top: 170vh;
+  right: calc(-1vw);
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid4 {
+  top: 258vh;
+  left: calc(20vw);
+}
+#hexagonsSolid5 {
+  rotate: -90deg;
+  scale: 0.6;
+  top: 300vh;
+  left: calc(60vw);
+}
+#hexagonsSolid6 {
+  top: 400vh;
+  left: calc(55vw);
+  scale: 0.8;
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid7 {
+  top: 420vh;
+  right: calc(-1vw);
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagonsSolid8 {
+  top: 508vh;
+  left: calc(20vw);
+}
+#circlesGroup1 > div,
+#circlesGroup2 > div {
+  height: calc((17 / 1920) * 100vw);
+}
+#circlesGroup1 > div > img,
+#circlesGroup2 > div > img {
+  width: calc((17 / 1920) * 100vw);
+}
+#circlesGroup1 {
+  top: 50vh;
+  right: calc(-0.5vw);
+}
+#circlesGroup2 {
+  top: 300vh;
+  right: calc(-0.5vw);
+}
+#pattern1 {
+  width: calc((552 / 1920) * 100vw);
+  top: -25vh;
+  right: calc(-10vw);
+}
+#pattern2 {
+  width: calc((453 / 1920) * 100vw);
+  top: 57vh;
+  right: calc(-12.5vw);
+}
+#pattern3 {
+  width: calc((723 / 1920) * 100vw);
+  top: 150vh;
+  left: calc(-25vw);
+}
+#pattern4 {
+  width: calc((552 / 1920) * 100vw);
+  top: 225vh;
+  right: calc(-10vw);
+}
+#pattern5 {
+  width: calc((453 / 1920) * 100vw);
+  top: 307vh;
+  right: calc(-12.5vw);
+}
+#pattern6 {
+  width: calc((723 / 1920) * 100vw);
+  top: 400vh;
+  left: calc(-25vw);
+}
+#hexagons1,
+#hexagons2,
+#hexagons3,
+#hexagons4 {
+  width: calc((114 / 1920) * 100vw);
+}
+#hexagons1 {
+  top: 50vh;
+  left: calc(10vw);
+}
+#hexagons2 {
+  top: 40vh;
+  right: calc(15vw);
+  width: calc((106 / 1920) * 100vw);
+}
+#hexagons3 {
+  top: 300vh;
+  left: calc(10vw);
+}
+#hexagons4 {
+  top: 290vh;
+  right: calc(15vw);
+  width: calc((106 / 1920) * 100vw);
+}
+#G {
+  position: absolute;
+  scale: 1;
+  top: 0;
+  left: 0;
+}
+#Eyes {
+  position: absolute;
+  scale: 4.5;
+  top: 200px;
+  left: 800px;
+}
+#GoogleWithEyes {
+  width: 100%;
+  height: 100%;
+  scale: 0.2;
+}
+#Navbar {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  background: transparent;
+  transition: all ease-in-out 250ms;
+}
+
+#Navbar.scrolled {
+  background: rgb(200, 200, 200);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-link,
+.nav-link:hover {
+  color: #202020;
+}
+
+#Navbar.dark.scrolled {
+  background: rgb(26, 26, 26);
+}
+.nav-link.dark,
+.nav-link.dark:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+#Footer {
+  position: absolute;
+  top: calc(250vh + (388 / 1440) * 100vw);
+  background: rgb(0, 123, 204);
+  width: 100%;
+  height: 400px;
+}
+#Footer > h1 {
+  color: white;
+}
+
+#body {
+  height: 200vh;
+}
