@@ -1,8 +1,14 @@
 #MemberImage {
-  background: #06062d;
-  border: solid 5px #9a9a9a;
+  /* background: #06062d; */
+  border-style: solid;
+  border-width: 3px;
   width: 100%;
 }
 #Member {
-  width: calc((350 / 1440) * 100vw);
+  width: 80vw;
+}
+@media(min-width:992px){
+  #Member {
+    width: calc((350 / 1440) * 100vw);
+  }
 }

@@ -1,0 +1,13 @@
+#App{
+    margin-top: 66px;
+}
+
+.landing{
+    height: 80vh;
+}
+
+@media(max-width:992px){
+.border-lg-left, .border-lg-right {
+    border-width: 0;
+}
+}

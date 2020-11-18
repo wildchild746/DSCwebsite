@@ -7,7 +7,6 @@ import Switch from "../Switch/Switch";
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(true);
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY <= 66) {
       setNavbar(true);
     } else {
