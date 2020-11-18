@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+  #MemberContainer {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}

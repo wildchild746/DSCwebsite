@@ -1,13 +1,12 @@
-#App{
-    margin-top: 66px;
+#App {
+  margin-top: 66px;
 }
 
-.landing{
-    height: 80vh;
-}
-
-@media(max-width:992px){
-.border-lg-left, .border-lg-right {
-    border-width: 0;
-}
+@media (min-width: 992px) {
+  .landing {
+    height: 60vh;
+  }
+  #svgContainer {
+    height: 40vh;
+  }
 }

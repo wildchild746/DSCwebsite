@@ -191,7 +191,7 @@ const Background = (props) => {
       >
         {backgrounds}
       </div>
-      <div id="BackgroundOverlay"></div>
+      {/* <div id="BackgroundOverlay" /> */}
     </div>
   );
 };

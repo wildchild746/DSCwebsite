@@ -19,7 +19,7 @@ const Navbar = (props) => {
     <nav
       className={`fixed-top navbar navbar-expand-lg navbar-${
         props.dark === 1 ? "dark dark" : "light"
-      }${navbar ? "" : " scrolled"}`}
+      }${!navbar || window.innerWidth < 992 ? " scrolled" : ""}`}
       id="Navbar"
     >
       <a className="navbar-brand mx-auto" href="#">

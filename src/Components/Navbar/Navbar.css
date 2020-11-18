@@ -4,11 +4,11 @@
   transition: all ease-in-out 100ms;
 }
 #Navbar.scrolled {
-  background: rgba(200, 200, 200, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 #Navbar.dark.scrolled {
-  background: rgba(26, 26, 26, 0.95);
+  background: rgba(32, 32, 32, 0.95);
 }
 .nav-link:hover {
   font-weight: bold;

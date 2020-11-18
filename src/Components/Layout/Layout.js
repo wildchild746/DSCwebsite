@@ -7,7 +7,6 @@ import Footer from "../Footer/Footer";
 import "./Layout.css";
 import App from "../App/App";
 
-
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -17,14 +16,14 @@ class Layout extends Component {
 
   switchDarkMode() {
     this.setState({
-      dark: this.state.dark === 0 ? 1 : 0
+      dark: this.state.dark === 0 ? 1 : 0,
     });
   }
 
   render() {
     return (
       <div id="Layout">
-        <Background repeat="2" dark={this.state.dark} />
+        <Background repeat="3" dark={this.state.dark} />
         <Navbar dark={this.state.dark} switchDarkMode={this.switchDarkMode} />
         <App dark={this.state.dark} />
         <Footer />
